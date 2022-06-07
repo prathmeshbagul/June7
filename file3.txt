@@ -1,0 +1,109 @@
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June
+$ git init
+Initialized empty Git repository in C:/Users/bagu_pra/Desktop/7June/.git/
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git add .
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git commit -m '1stof7'
+[master (root-commit) 65dcce1] 1stof7
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file1.txt
+ create mode 100644 file2.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git remote add 7June https://github.com/prathmeshbagul/June7.git
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git push 7June
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 223 bytes | 223.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/prathmeshbagul/June7.git
+ * [new branch]      master -> master
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git add .
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git diff -staged
+error: invalid option: -staged
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git diff --staged
+diff --git a/file3.txt b/file3.txt
+new file mode 100644
+index 0000000..e69de29
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file3.txt
+
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git status -s
+A  file3.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git status --short
+A  file3.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+
+
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git remote add 7June https://github.com/prathmeshbagul/June7.git
+error: remote 7June already exists.
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git push 7June
+Everything up-to-date
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git commit -m 'File3'
+[master d71e3fe] File3
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file3.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git push 7June
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 247 bytes | 247.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/prathmeshbagul/June7.git
+   65dcce1..d71e3fe  master -> master
