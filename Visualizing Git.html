@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://git-school.github.io/visualizing-git/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="./Visualizing Git_files/analytics.js.download"></script><script async="" src="./Visualizing Git_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115441830-1');
+</script>
+
+
+<title>Visualizing Git</title>
+<script src="./Visualizing Git_files/jquery.js.download"></script>
+<script src="./Visualizing Git_files/jquery-ui.min.js.download"></script>
+<script data-main="js/main" src="./Visualizing Git_files/require.min.js.download"></script>
+<link rel="stylesheet" href="./Visualizing Git_files/normalize.css">
+<link rel="stylesheet" href="./Visualizing Git_files/1140.css">
+<link rel="stylesheet" href="./Visualizing Git_files/explaingit.css">
+<link rel="stylesheet" href="./Visualizing Git_files/jquery-ui.min.css">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="./Visualizing Git_files/main.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="explaingit" src="./Visualizing Git_files/explaingit.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="demos" src="./Visualizing Git_files/demos.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="historyview" src="./Visualizing Git_files/historyview.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="controlbox" src="./Visualizing Git_files/controlbox.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="d3" src="./Visualizing Git_files/d3.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="vendor/yargs-parser" src="./Visualizing Git_files/yargs-parser.js.download"></script></head>
+<body style="">
+
+<div id="ExplainGitZen-Container" style="display: block;">
+    <div class="playground-container">
+      <pre id="last-command" style="display: none;">git commit</pre>
+    <div class="control-box"><select class="scenario-chooser"><option value="free">Free Explore</option><option value="free-remote">Free Explore with Remote</option><option value="upstream-changes">Upstream Changes</option><option value="rewritten-history">Rewritten Remote History</option><option value="revert">Revert</option><option value="cherry-pick">Cherry Pick</option></select><div class="log"><div class="info">Have fun!</div><div class="command-entry">git commit</div><div class="command-entry">git checkout -b new1</div><div class="command-entry">git commit</div><div class="command-entry">git commit</div><div class="command-entry">git checkout master</div><div class="command-entry">git checkout -b new2</div><div class="command-entry">git commit</div><div class="command-entry">git commit</div><div class="command-entry">git checkout</div><div class="error">Cannot find commit: undefined</div><div class="command-entry">git checkout master</div><div class="command-entry">git checkout -b new3</div><div class="command-entry">git commit</div><div class="command-entry">git commit</div><div class="command-entry">git checkout master</div><div class="command-entry">git commit</div><div class="command-entry">git commit</div><div class="command-entry">git commit</div><div class="command-entry">git commit</div><div class="command-entry">git checkout -b new4</div><div class="command-entry">git commit</div><div class="command-entry">git commit</div><div class="command-entry">git checkout master</div><div class="command-entry">git commit</div><div class="command-entry">git commit</div><div class="command-entry">git checkout -b new5</div><div class="command-entry">git commit</div><div class="command-entry">git commit</div><div class="command-entry">git branch new3</div><div class="error">Branch "new3" already exists.</div><div class="command-entry">git branch new6</div><div class="command-entry">git commit</div><div class="command-entry">git commit</div><div class="command-entry">git commit master</div><div class="command-entry">git checkout master</div><div class="command-entry">git branch new7</div><div class="command-entry">git comiit</div><div class="error">I don't understand that.</div><div class="command-entry">git commit</div><div class="command-entry">git commit</div><div class="command-entry">git checkout new3</div><div class="command-entry">git checkout new1</div><div class="command-entry">git checkhout master</div><div class="error">I don't understand that.</div><div class="command-entry">git checkout master</div><div class="command-entry">git checkout new6</div><div class="command-entry">git commit</div><div class="command-entry">git commnit</div><div class="error">I don't understand that.</div><div class="command-entry">git commit</div><div class="command-entry">git checkout new7</div><div class="command-entry">git commit</div><div class="command-entry">git commit</div><div class="command-entry">git checkout new5</div><div class="command-entry">git commit</div><div class="command-entry">git checkout master</div><div class="command-entry">git commit</div></div><input type="text" class="input" placeholder="enter git command"></div><div class="svg-container"><svg id="ExplainGitZen" height="864" width="1625"><text class="remote-name-display" x="10" y="25">Local Repository</text><text class="current-branch-display" x="10" y="45">HEAD: master</text><g class="pointers"><line id="ExplainGitZen-e137e9b-to-initial" class="commit-pointer" x1="24" y1="518" x2="-8.8" y2="518" marker-end="url(#triangle)"></line><line id="ExplainGitZen-9d55d26-to-e137e9b" class="commit-pointer" x1="114" y1="518" x2="81.2" y2="518" marker-end="url(#triangle)"></line><line id="ExplainGitZen-6d4dd12-to-9d55d26" class="commit-pointer" x1="204" y1="518" x2="171.2" y2="518" marker-end="url(#triangle)"></line><line id="ExplainGitZen-4f9ea17-to-6d4dd12" class="commit-pointer" x1="294" y1="518" x2="261.2" y2="518" marker-end="url(#triangle)"></line><line id="ExplainGitZen-2fbd3e1-to-9d55d26" class="commit-pointer" x1="211.61522368914976" y1="446.3847763108502" x2="162.06173157302027" y2="495.93826842697973" marker-end="url(#triangle)"></line><line id="ExplainGitZen-4801925-to-2fbd3e1" class="commit-pointer" x1="294" y1="428" x2="261.2" y2="428" marker-end="url(#triangle)"></line><line id="ExplainGitZen-5779ae6-to-9d55d26" class="commit-pointer" x1="211.61522368914976" y1="589.6152236891497" x2="162.06173157302027" y2="540.0617315730203" marker-end="url(#triangle)"></line><line id="ExplainGitZen-502bec9-to-5779ae6" class="commit-pointer" x1="294" y1="608" x2="261.2" y2="608" marker-end="url(#triangle)"></line><line id="ExplainGitZen-5fb282b-to-9d55d26" class="commit-pointer" x1="218.3724465170011" y1="361.2551069659978" x2="153.9530641795987" y2="490.0938716408026" marker-end="url(#triangle)"></line><line id="ExplainGitZen-23e2185-to-5fb282b" class="commit-pointer" x1="294" y1="338" x2="261.2" y2="338" marker-end="url(#triangle)"></line><line id="ExplainGitZen-8126a7f-to-23e2185" class="commit-pointer" x1="384" y1="338" x2="351.2" y2="338" marker-end="url(#triangle)"></line><line id="ExplainGitZen-e623308-to-8126a7f" class="commit-pointer" x1="474" y1="338" x2="441.2" y2="338" marker-end="url(#triangle)"></line><line id="ExplainGitZen-a9caad9-to-e623308" class="commit-pointer" x1="564" y1="338" x2="531.2" y2="338" marker-end="url(#triangle)"></line><line id="ExplainGitZen-32850af-to-a9caad9" class="commit-pointer" x1="654" y1="338" x2="621.2" y2="338" marker-end="url(#triangle)"></line><line id="ExplainGitZen-626101f-to-e623308" class="commit-pointer" x1="571.6152236891497" y1="266.3847763108502" x2="522.0617315730203" y2="315.93826842697973" marker-end="url(#triangle)"></line><line id="ExplainGitZen-385b40d-to-626101f" class="commit-pointer" x1="654" y1="248" x2="621.2" y2="248" marker-end="url(#triangle)"></line><line id="ExplainGitZen-09c9c0a-to-385b40d" class="commit-pointer" x1="744" y1="248" x2="711.2" y2="248" marker-end="url(#triangle)"></line><line id="ExplainGitZen-438280e-to-09c9c0a" class="commit-pointer" x1="834" y1="248" x2="801.2" y2="248" marker-end="url(#triangle)"></line><line id="ExplainGitZen-4adc1c0-to-438280e" class="commit-pointer" x1="924" y1="248" x2="891.2" y2="248" marker-end="url(#triangle)"></line><line id="ExplainGitZen-6c95acc-to-4adc1c0" class="commit-pointer" x1="1014" y1="248" x2="981.2" y2="248" marker-end="url(#triangle)"></line><line id="ExplainGitZen-4bbba6d-to-6c95acc" class="commit-pointer" x1="1104" y1="248" x2="1071.2" y2="248" marker-end="url(#triangle)"></line><line id="ExplainGitZen-ecb5b99-to-385b40d" class="commit-pointer" x1="751.6152236891497" y1="176.38477631085024" x2="702.0617315730203" y2="225.93826842697973" marker-end="url(#triangle)"></line><line id="ExplainGitZen-cb1d22d-to-ecb5b99" class="commit-pointer" x1="834" y1="158" x2="801.2" y2="158" marker-end="url(#triangle)"></line><line id="ExplainGitZen-799f48b-to-438280e" class="commit-pointer" x1="931.6152236891497" y1="176.38477631085024" x2="882.0617315730203" y2="225.93826842697973" marker-end="url(#triangle)"></line><line id="ExplainGitZen-dcbcfad-to-799f48b" class="commit-pointer" x1="1014" y1="158" x2="981.2" y2="158" marker-end="url(#triangle)"></line><line id="ExplainGitZen-4b7087d-to-385b40d" class="commit-pointer" x1="758.3724465170011" y1="91.25510696599781" x2="693.9530641795986" y2="220.09387164080263" marker-end="url(#triangle)"></line><line id="ExplainGitZen-6d1835f-to-4b7087d" class="commit-pointer" x1="834" y1="68" x2="801.2" y2="68" marker-end="url(#triangle)"></line><line id="ExplainGitZen-34d9022-to-4bbba6d" class="commit-pointer" x1="1194" y1="248" x2="1161.2" y2="248" marker-end="url(#triangle)"></line><line id="ExplainGitZen-5a5b140-to-cb1d22d" class="commit-pointer" x1="931.6152236891497" y1="86.38477631085024" x2="882.0617315730203" y2="135.93826842697973" marker-end="url(#triangle)"></line></g><g class="commits"><text class="message-label" x="950" y="112"></text><text class="id-label" x="950" y="102">5a5b140..</text><text class="message-label" x="1220" y="292"></text><text class="id-label" x="1220" y="282">34d9022..</text><text class="message-label" x="860" y="112"></text><text class="id-label" x="860" y="102">6d1835f..</text><text class="message-label" x="770" y="112"></text><text class="id-label" x="770" y="102">4b7087d..</text><text class="message-label" x="1040" y="202"></text><text class="id-label" x="1040" y="192">dcbcfad..</text><text class="message-label" x="950" y="202"></text><text class="id-label" x="950" y="192">799f48b..</text><text class="message-label" x="860" y="202"></text><text class="id-label" x="860" y="192">cb1d22d..</text><text class="message-label" x="770" y="202"></text><text class="id-label" x="770" y="192">ecb5b99..</text><text class="message-label" x="1130" y="292"></text><text class="id-label" x="1130" y="282">4bbba6d..</text><text class="message-label" x="1040" y="292"></text><text class="id-label" x="1040" y="282">6c95acc..</text><text class="message-label" x="950" y="292"></text><text class="id-label" x="950" y="282">4adc1c0..</text><text class="message-label" x="860" y="292"></text><text class="id-label" x="860" y="282">438280e..</text><text class="message-label" x="770" y="292"></text><text class="id-label" x="770" y="282">09c9c0a..</text><text class="message-label" x="680" y="292"></text><text class="id-label" x="680" y="282">385b40d..</text><text class="message-label" x="590" y="292"></text><text class="id-label" x="590" y="282">626101f..</text><text class="message-label" x="680" y="382"></text><text class="id-label" x="680" y="372">32850af..</text><text class="message-label" x="590" y="382"></text><text class="id-label" x="590" y="372">a9caad9..</text><text class="message-label" x="500" y="382"></text><text class="id-label" x="500" y="372">e623308..</text><text class="message-label" x="410" y="382"></text><text class="id-label" x="410" y="372">8126a7f..</text><text class="message-label" x="320" y="382"></text><text class="id-label" x="320" y="372">23e2185..</text><text class="message-label" x="230" y="382"></text><text class="id-label" x="230" y="372">5fb282b..</text><text class="message-label" x="320" y="652"></text><text class="id-label" x="320" y="642">502bec9..</text><text class="message-label" x="230" y="652"></text><text class="id-label" x="230" y="642">5779ae6..</text><text class="message-label" x="320" y="472"></text><text class="id-label" x="320" y="462">4801925..</text><text class="message-label" x="230" y="472"></text><text class="id-label" x="230" y="462">2fbd3e1..</text><text class="message-label" x="320" y="562"></text><text class="id-label" x="320" y="552">4f9ea17..</text><text class="message-label" x="230" y="562"></text><text class="id-label" x="230" y="552">6d4dd12..</text><text class="message-label" x="140" y="562"></text><text class="id-label" x="140" y="552">9d55d26..</text><text class="message-label" x="50" y="562">first commit</text><text class="id-label" x="50" y="552">e137e9b..</text><circle id="ExplainGitZen-e137e9b" class="commit" cx="50" cy="518" r="20"></circle><circle id="ExplainGitZen-9d55d26" class="commit" cx="140" cy="518" r="20"></circle><circle id="ExplainGitZen-6d4dd12" class="commit" cx="230" cy="518" r="20"></circle><circle id="ExplainGitZen-4f9ea17" class="commit" cx="320" cy="518" r="20"></circle><circle id="ExplainGitZen-2fbd3e1" class="commit" cx="230" cy="428" r="20"></circle><circle id="ExplainGitZen-4801925" class="commit" cx="320" cy="428" r="20"></circle><circle id="ExplainGitZen-5779ae6" class="commit" cx="230" cy="608" r="20"></circle><circle id="ExplainGitZen-502bec9" class="commit" cx="320" cy="608" r="20"></circle><circle id="ExplainGitZen-5fb282b" class="commit" cx="230" cy="338" r="20"></circle><circle id="ExplainGitZen-23e2185" class="commit" cx="320" cy="338" r="20"></circle><circle id="ExplainGitZen-8126a7f" class="commit" cx="410" cy="338" r="20"></circle><circle id="ExplainGitZen-e623308" class="commit" cx="500" cy="338" r="20"></circle><circle id="ExplainGitZen-a9caad9" class="commit" cx="590" cy="338" r="20"></circle><circle id="ExplainGitZen-32850af" class="commit" cx="680" cy="338" r="20"></circle><circle id="ExplainGitZen-626101f" class="commit" cx="590" cy="248" r="20"></circle><circle id="ExplainGitZen-385b40d" class="commit" cx="680" cy="248" r="20"></circle><circle id="ExplainGitZen-09c9c0a" class="commit" cx="770" cy="248" r="20"></circle><circle id="ExplainGitZen-438280e" class="commit" cx="860" cy="248" r="20"></circle><circle id="ExplainGitZen-4adc1c0" class="commit" cx="950" cy="248" r="20"></circle><circle id="ExplainGitZen-6c95acc" class="commit" cx="1040" cy="248" r="20"></circle><circle id="ExplainGitZen-4bbba6d" class="commit" cx="1130" cy="248" r="20"></circle><circle id="ExplainGitZen-ecb5b99" class="commit" cx="770" cy="158" r="20"></circle><circle id="ExplainGitZen-cb1d22d" class="commit" cx="860" cy="158" r="20"></circle><circle id="ExplainGitZen-799f48b" class="commit" cx="950" cy="158" r="20"></circle><circle id="ExplainGitZen-dcbcfad" class="commit" cx="1040" cy="158" r="20"></circle><circle id="ExplainGitZen-4b7087d" class="commit" cx="770" cy="68" r="20"></circle><circle id="ExplainGitZen-6d1835f" class="commit" cx="860" cy="68" r="20"></circle><circle id="ExplainGitZen-34d9022" class="commit" cx="1220" cy="248" r="20"></circle><circle id="ExplainGitZen-5a5b140" class="commit checked-out" cx="950" cy="68" r="20"></circle></g><g class="tags"><g class="branch-tag"><rect width="68" height="20" y="23" x="916"></rect><text y="37" x="950">master</text></g><g class="branch-tag head-tag"><rect width="52" height="20" y="-2" x="924"></rect><text y="12" x="950">HEAD</text></g><g class="branch-tag"><rect width="52" height="20" y="568" x="294"></rect><text y="582" x="320">new1</text></g><g class="branch-tag"><rect width="52" height="20" y="383" x="294"></rect><text y="397" x="320">new2</text></g><g class="branch-tag"><rect width="52" height="20" y="658" x="294"></rect><text y="672" x="320">new3</text></g><g class="branch-tag"><rect width="52" height="20" y="293" x="654"></rect><text y="307" x="680">new4</text></g><g class="branch-tag"><rect width="52" height="20" y="203" x="1194"></rect><text y="217" x="1220">new5</text></g><g class="branch-tag"><rect width="52" height="20" y="113" x="1014"></rect><text y="127" x="1040">new6</text></g><g class="branch-tag"><rect width="52" height="20" y="23" x="834"></rect><text y="37" x="860">new7</text></g></g></svg></div></div>
+</div>
+
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="0" height="0">
+
+    <marker id="triangle" refX="5" refY="5" markerUnits="strokeWidth" fill="rgba(100,100,100,0.8)" markerWidth="4" markerHeight="3" orient="auto" viewBox="0 0 10 10">
+        <path d="M 0 0 L 10 5 L 0 10 z"></path>
+    </marker>
+    <marker id="faded-triangle" refX="5" refY="5" markerUnits="strokeWidth" fill="#DDD" markerWidth="4" markerHeight="3" orient="auto" viewBox="0 0 10 10">
+        <path d="M 0 0 L 10 5 L 0 10 z"></path>
+    </marker>
+    <marker id="brown-triangle" refX="5" refY="5" markerUnits="strokeWidth" fill="rgba(100,100,100,0.8)" markerWidth="4" markerHeight="3" orient="auto" viewBox="0 0 10 10">
+        <path d="M 0 0 L 10 5 L 0 10 z"></path>
+    </marker>
+</svg>
+
+<script type="text/javascript">
+require(['explaingit', 'demos'], function (explainGit, demos) {
+    function ready(fn) {
+      if (document.readyState != 'loading'){
+        fn();
+      } else {
+        document.addEventListener('DOMContentLoaded', fn);
+      }
+    }
+
+    function clearSavedState () {
+      if (window.localStorage) {
+        window.localStorage.removeItem('git-viz-snapshot')
+      }
+    }
+
+    function cleanupDom () {
+      $('.svg-container.remote-container').remove()
+    }
+
+    function clean () {
+      clearSavedState()
+      cleanupDom()
+    }
+
+    function cleanHash (hash) {
+      return hash.replace(/^#/, '')
+    }
+
+    function findDemo (demos, name) {
+      return demos.filter(function (d) {
+        return d.key === name
+      })[0]
+    }
+
+    function copyDemo (demo) {
+      // make a deep copy
+      return JSON.parse(JSON.stringify(demo))
+    }
+
+    var lastDemo = findDemo(demos, cleanHash(window.location.hash)) || demos[0]
+
+    ready(function () {
+      window.onhashchange = function () {
+        var demo = findDemo(demos, cleanHash(window.location.hash)) || lastDemo
+        if (demo) {
+          lastDemo = demo
+          document.getElementById('last-command').textContent = ""
+          clean()
+          open()
+        }
+      }
+
+      open()
+    })
+
+    function open() {
+      explainGit.reset();
+
+      var savedState = null
+      if (window.localStorage) {
+        savedState = JSON.parse(window.localStorage.getItem('git-viz-snapshot') || 'null')
+      }
+
+      var initial = Object.assign(copyDemo(lastDemo), {
+        name: 'Zen',
+        height: '100%',
+        initialMessage: lastDemo.message,
+        undoHistory: savedState,
+        hvSavedState: savedState && savedState.stack[savedState.pointer].hv,
+        ovSavedState: savedState && savedState.stack[savedState.pointer].ov
+      })
+
+      explainGit.open(initial);
+    }
+
+    window.resetVis = function () {
+      if (confirm('This will reset your visualization. Are you sure?')) {
+        clean()
+        open()
+      }
+    }
+
+    window.pres = function () {
+      document.getElementById('last-command').style.display = 'block'
+    }
+});
+</script>
+
+
+</body></html>
