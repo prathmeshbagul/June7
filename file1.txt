@@ -1,1 +1,200 @@
 hello
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git checkout -b newbranch
+Switched to a new branch 'newbranch'
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch)
+$ git commit -m 'commitonnewbranch'
+On branch newbranch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch)
+$ git add .
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch)
+$  git commit -m 'commitonnewbranch'
+[newbranch a90e0c5] commitonnewbranch
+ 1 file changed, 109 insertions(+)
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch)
+$ git push 7June
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.02 KiB | 1.02 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'newbranch' on GitHub by visiting:
+remote:      https://github.com/prathmeshbagul/June7/pull/new/newbranch
+remote:
+To https://github.com/prathmeshbagul/June7.git
+ * [new branch]      newbranch -> newbranch
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch)
+$ nano file2.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch)
+$ git add .
+warning: LF will be replaced by CRLF in file2.txt.
+The file will have its original line endings in your working directory
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch)
+$ git commit -m '2ndonnewbranch'
+[newbranch 97f5b80] 2ndonnewbranch
+ 1 file changed, 1 insertion(+)
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch)
+$ git push 7June
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/prathmeshbagul/June7.git
+   a90e0c5..97f5b80  newbranch -> newbranch
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch)
+$ git checkout master
+Switched to branch 'master'
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ nano file1.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git add .
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git commit -m 'backtomaster'
+[master 5b5de91] backtomaster
+ 1 file changed, 1 insertion(+)
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git push 7June
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 288 bytes | 288.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/prathmeshbagul/June7.git
+   d71e3fe..5b5de91  master -> master
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git checkout -b newbranch2
+Switched to a new branch 'newbranch2'
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch2)
+$ nano file1.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch2)
+$ git add file1.txt
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch2)
+$ git commit -m 'newbranch21stcommit'
+[newbranch2 50e9347] newbranch21stcommit
+ 1 file changed, 2 insertions(+)
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch2)
+$ git push 7June
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 350 bytes | 350.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'newbranch2' on GitHub by visiting:
+remote:      https://github.com/prathmeshbagul/June7/pull/new/newbranch2
+remote:
+To https://github.com/prathmeshbagul/June7.git
+ * [new branch]      newbranch2 -> newbranch2
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch2)
+$ touch file4.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch2)
+$ git add .
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch2)
+$ git commit -m 'file4created'
+[newbranch2 6aec728] file4created
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file4.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch2)
+$ git push 7june
+fatal: '7june' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch2)
+$ git push 7June
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 235 bytes | 235.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/prathmeshbagul/June7.git
+   50e9347..6aec728  newbranch2 -> newbranch2
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (newbranch2)
+$ git checkout master
+Switched to branch 'master'
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ touch file5.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git add .
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git commit -m 'backtomasterfrombrnach2'
+[master 246ed65] backtomasterfrombrnach2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file5.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git push 7June
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 241 bytes | 241.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/prathmeshbagul/June7.git
+   5b5de91..246ed65  master -> master
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/7June (master)
+$ git checkout master
+Already on 'master'
+
+
